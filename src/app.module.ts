@@ -11,6 +11,9 @@ import { AuthModule } from './auth/auth.module';
 
 // Entidades
 import { User } from './users/entities/user.entity';
+import { ServicioModule } from './servicio/servicio.module';
+import { ProfesionalModule } from './profesional/profesional.module';
+import { SolicitudTurnoModule } from './solicitud-turno/solicitud-turno.module';
 
 
 
@@ -42,6 +45,12 @@ import { User } from './users/entities/user.entity';
     UsersModule,
    
     AuthModule,
+   
+    ServicioModule,
+   
+    ProfesionalModule,
+   
+    SolicitudTurnoModule,
   
   ],
 })
