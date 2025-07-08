@@ -8,5 +8,6 @@ import { SolicitudesTurnoController } from './solicitud-turno.controller';
   imports: [TypeOrmModule.forFeature([SolicitudTurno])],
   controllers: [SolicitudesTurnoController],
   providers: [SolicitudesTurnoService],
+  exports: [SolicitudesTurnoService], // ✅ Esto es necesario
 })
 export class SolicitudTurnoModule {}

@@ -14,6 +14,7 @@ import { User } from './users/entities/user.entity';
 import { ServicioModule } from './servicio/servicio.module';
 import { ProfesionalModule } from './profesional/profesional.module';
 import { SolicitudTurnoModule } from './solicitud-turno/solicitud-turno.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 
@@ -51,6 +52,8 @@ import { SolicitudTurnoModule } from './solicitud-turno/solicitud-turno.module';
     ProfesionalModule,
    
     SolicitudTurnoModule,
+   
+    DashboardModule,
   
   ],
 })
