@@ -34,16 +34,19 @@ export class SolicitudesTurnoService {
     return solicitud;
   }
 
-  // Actualizar solicitud
   async update(id: string, dto: UpdateSolicitudTurnoDto) {
     const solicitud = await this.findOne(id);
     Object.assign(solicitud, dto);
-
+  
     if (dto.estado) {
       solicitud.fechaModificacion = new Date();
       solicitud.usuarioModificacion = dto.usuarioModificacion;
     }
-
+  
+    if (dto.fechaHoraTurno) {
+      solicitud.fechaHoraTurno = new Date(dto.fechaHoraTurno);
+    }
+  
     return this.repo.save(solicitud);
   }
 

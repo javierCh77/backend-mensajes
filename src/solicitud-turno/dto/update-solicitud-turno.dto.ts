@@ -1,4 +1,4 @@
-import { IsOptional, IsIn, IsString, IsDate } from 'class-validator';
+import { IsOptional, IsIn, IsString, IsDate, IsISO8601 } from 'class-validator';
 import { Type } from 'class-transformer';
 
 export class UpdateSolicitudTurnoDto {
@@ -14,4 +14,8 @@ export class UpdateSolicitudTurnoDto {
   @IsDate()
   @Type(() => Date)
   fechaModificacion?: Date;
+  
+  @IsOptional()
+  @IsISO8601()
+  fechaHoraTurno?: string;
 }

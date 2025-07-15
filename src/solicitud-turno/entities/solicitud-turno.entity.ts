@@ -46,8 +46,10 @@ export class SolicitudTurno {
   // 👇 NUEVOS CAMPOS
   @Column({ nullable: true })
   usuarioModificacion: string;
-  
+
   @Column({ type: 'timestamp', nullable: true })
   fechaModificacion: Date;
-  
+
+  @Column({ type: 'timestamp', nullable: true })
+  fechaHoraTurno?: Date;
 }
