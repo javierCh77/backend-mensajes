@@ -24,9 +24,7 @@ async function bootstrap() {
   );
 
   app.enableCors({
-    // origin: ['http://31.97.23.62:3090','http://localhost:3090', ],
-        origin: ['http://localhost:3091', ],
-
+    origin: ['http://31.97.23.62:3090','http://localhost:3090', ],
     credentials: true,
   });
 
