@@ -19,9 +19,9 @@ export class DashboardService {
     const mensajesPendientes = await this.solicitudTurnoService.contarPorEstado('pendiente');
     const mensajesAsignados = await this.solicitudTurnoService.contarPorEstado('asignado');
 
-    const respuestasIA = 95; // placeholder
-    const tiempoPromedioRespuesta = '3m 40s'; // placeholder
-    const porcentajeExitoIA = 82; // placeholder
+    const respuestasIA = 5; // placeholder
+    const tiempoPromedioRespuesta = '0m 20s'; // placeholder
+    const porcentajeExitoIA = 98; // placeholder
 
     const ultimosMensajes = await this.solicitudTurnoService.obtenerUltimos(5);
 
@@ -62,11 +62,11 @@ export class DashboardService {
         { mes: "Mayo", cantidad: 150 },
         { mes: "Junio", cantidad: 123 },
         { mes: "Julio", cantidad: 165 },
-        { mes: "Agosto", cantidad: 90 },
-        { mes: "Septiembre", cantidad: 110 },
-        { mes: "Octubre", cantidad: 140 },
-        { mes: "Noviembre", cantidad: 115 },
-        { mes: "Diciembre", cantidad: 175 },
+        { mes: "Agosto", cantidad: 0 },
+        { mes: "Septiembre", cantidad: 0 },
+        { mes: "Octubre", cantidad: 0 },
+        { mes: "Noviembre", cantidad: 0 },
+        { mes: "Diciembre", cantidad: 0 },
       ],
       mensajesPorCanal: [], // opcional
       estadosDetalle,
